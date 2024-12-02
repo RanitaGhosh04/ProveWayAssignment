@@ -1,0 +1,114 @@
+/* General Styling */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #fffafc;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.container {
+  width: 90%;
+  max-width: 400px; /* Reduced the max-width */
+  padding: 20px;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+/* Product Info Section */
+.product-info {
+  display: flex;
+  flex-direction: column;
+  gap: 15px; /* Reduced spacing between sections */
+  background-color: #f5eff0;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.quantity-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.left-section {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.discount {
+  background-color: #ff9fb5;
+  color: white;
+  padding: 4px 8px; /* Reduced padding for a smaller discount badge */
+  border-radius: 5px;
+  font-size: 12px; /* Smaller font size */
+}
+
+.price {
+  text-align: right;
+}
+
+.current-price {
+  font-size: 16px; /* Reduced font size */
+  font-weight: bold;
+  color: #28a745;
+}
+
+.original-price {
+  font-size: 12px; /* Smaller font size */
+  text-decoration: line-through;
+  color: #bbb;
+}
+
+/* Grid Section */
+.grid-container {
+  display: flex;
+  flex-direction: column;
+  gap: 2px; /* Reduced the gap between rows */
+  display: none;
+}
+
+.grid-header {
+  display: grid;
+  grid-template-columns: 1.2fr 1fr 0fr;
+  text-align: center;
+  font-weight: bold;
+  font-size: 13px; /* Smaller font size */
+  color: #333;
+}
+
+.grid-row {
+  display: grid;
+  grid-template-columns: 0fr 1fr 1fr;
+  gap: 8px; /* Reduced the gap between items */
+  align-items: center;
+}
+
+.item.number {
+  text-align: center;
+  font-weight: bold;
+  font-size: 13px; /* Smaller font size */
+}
+
+select {
+  padding: 6px; /* Reduced padding inside dropdowns */
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 13px; /* Smaller font size */
+  background-color: white;
+  text-align: left;
+  width: 100%;
+}
+
+select:focus {
+  outline: none;
+  border-color: #007bff;
+}
